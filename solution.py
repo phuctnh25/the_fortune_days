@@ -16,13 +16,13 @@ def solution(string):
     length_s = len(string)
     range_s = range(len(string))
     out_string = None
-    c = 0
+    #c = 0
     #answers = set()
     for i in range(length_s):
         comb = combinations(range_s, i)
         for markers in comb:
             candidate = transform_string(string, markers)
-            c += 1
+            #c += 1
             #answers.add(candidate)
             if out_string is None:
                 out_string = candidate
